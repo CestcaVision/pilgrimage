@@ -9,8 +9,8 @@ import { PostModule } from './modules/post/post.module';
 
 
 @Module({
-  imports: [UserModule, TypeOrmModule.forRoot(), PostModule],
-  controllers: [AppController, UserController],
-  providers: [AppService, UserService],
+  imports: [TypeOrmModule.forRoot(), UserModule, PostModule],
+  // controllers: [AppController, UserController],
+  // providers: [AppService, UserService],
 })
 export class AppModule { }
